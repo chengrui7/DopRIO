@@ -1,6 +1,6 @@
 # DopRIO: Doppler Strengthened Tightly-Coupled 4D Millimeter-Wave Radar–Inertial Odometry
 
-Our paper **“DopRIO: Doppler Strengthened Tightly-Coupled 4D Millimeter-Wave Radar–Inertial Odometry”** has been accepted by **Robotics and Autonomous Systems**. The paper is available at: [ScienceDirect](https://www.sciencedirect.com/science/article/pii/S0921889026002708).
+Our paper **_DopRIO: Doppler Strengthened Tightly-Coupled 4D Millimeter-Wave Radar–Inertial Odometry_** has been accepted by **_Robotics and Autonomous Systems_**. \[[paper](https://www.sciencedirect.com/science/article/pii/S0921889026002708)\]
 
 ## 1.Dependency
 ### 1.1 Ubuntu and Ros  
