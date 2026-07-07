@@ -1,4 +1,6 @@
-# DopRIO: DopRIO: Doppler Strengthened Tightly-Coupled 4D Millimeter-Wave Radar–Inertial Odometry
+# DopRIO: Doppler Strengthened Tightly-Coupled 4D Millimeter-Wave Radar–Inertial Odometry
+
+Our paper **“DopRIO: Doppler Strengthened Tightly-Coupled 4D Millimeter-Wave Radar–Inertial Odometry”** has been accepted by **Robotics and Autonomous Systems**. The paper is available at: [ScienceDirect](https://www.sciencedirect.com/science/article/pii/S0921889026002708).
 
 ## 1.Dependency
 ### 1.1 Ubuntu and Ros  
@@ -18,7 +20,7 @@ First you need to compile it
 
 Then you can run our launch file
 
-`roslaunch doprio doprio_serial.launch`
+`roslaunch rise rise_serial.launch`
 
 ## 3.Acknowlegement
 [slam in autonomous driving](https://github.com/gaoxiang12/slam_in_autonomous_driving)
@@ -27,10 +29,29 @@ Then you can run our launch file
 [Coloradar](https://arpg.github.io/coloradar/) and [NTU4DRADLM](https://github.com/junzhang2016/NTU4DRadLM). Many thanks to all the authors of the two public datasets.
 
 ## 4.Implementation Details
-Detailed explanations and additional resources will be released upon the acceptance of our paper.
+DopRIO is implemented as a tightly-coupled 4D millimeter-wave radar-inertial odometry system. The pipeline jointly uses radar point clouds, Doppler velocity measurements, and IMU measurements for robust state estimation under sparse and noisy radar observations. In particular, Doppler information is used to refine radar points, estimate point-wise uncertainty for registration, and construct a joint registration-Doppler residual in the filtering framework. Before running the system, please make sure that the radar-IMU extrinsic calibration, timestamp synchronization, Doppler sign convention, and dataset-specific parameters are correctly configured.
+
 
 ## 5.Demo
 Demo in the Outdoors6 sequence of ColoRadar Dataset 
 ![Demo](apps/pic/ourdoors6.gif)
 Demo in the 2nd sequence of Our collected real-world data 
 ![Demo](apps/pic/ours1.gif)
+
+## 6.Citation
+If you find this work useful for your research, please consider citing our paper:
+
+```bibtex
+@article{CHENG2026105598,
+  title   = {DopRIO: Doppler strengthened tightly-coupled 4D millimeter-wave radar--inertial odometry},
+  author  = {Ruiqi Cheng and Huijun Di and Jian Li and Feng Liu and Wei Liang},
+  journal = {Robotics and Autonomous Systems},
+  volume  = {205},
+  pages   = {105598},
+  year    = {2026},
+  issn    = {0921-8890},
+  doi     = {10.1016/j.robot.2026.105598},
+  url     = {https://www.sciencedirect.com/science/article/pii/S0921889026002708}
+}
+```
+
