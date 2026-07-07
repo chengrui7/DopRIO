@@ -43,7 +43,7 @@ If you find this work useful for your research, please consider citing our paper
 
 ```bibtex
 @article{CHENG2026105598,
-  title   = {DopRIO: Doppler strengthened tightly-coupled 4D millimeter-wave radar--inertial odometry},
+  title   = {DopRIO: Doppler strengthened tightly-coupled 4D millimeter-wave radar-inertial odometry},
   author  = {Ruiqi Cheng and Huijun Di and Jian Li and Feng Liu and Wei Liang},
   journal = {Robotics and Autonomous Systems},
   volume  = {205},
